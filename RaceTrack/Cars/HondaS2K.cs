@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 
 namespace RaceTrack.RaceTrack.Cars
 {
-    public class Tractor : RaceCar
+    public class HondaS2K : RaceCar
     {
-        public Tractor()
+        public HondaS2K()
         {
-            Name = "Tractor";
-            TopSpeed = 20;
+            Name = "HondaS2K";
+            TopSpeed = 100;
         }
 
         public override void StartEngine()
         {
-            Console.WriteLine($"The {Name} struggles to start");
+            Console.WriteLine($"The {Name} sounds like a jet!!!!");
         }
-
         public override void Brake()
         {
-            Console.WriteLine($"The {Name} is having a hard time stopping!");
+            Console.WriteLine($"The {Name} stops on a dime!");
             base.Brake();
         }
         public override void StopEngine()
